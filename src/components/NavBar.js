@@ -8,7 +8,7 @@ function NavBar() {
             <Container>
                 <Navbar.Brand href="">
                 <img
-                src="/logo.svg"
+                src="../logo.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
