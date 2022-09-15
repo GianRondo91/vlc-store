@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import CartWidget from "../CartWidget/CartWidget";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 function NavBar() {
     return (
@@ -8,11 +10,11 @@ function NavBar() {
             <Container>
                 <Navbar.Brand href="">
                 <img
-                src="../logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
+                    src="../logo.svg"
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                    alt="React Bootstrap logo"
                 />
                 </Navbar.Brand>
                 <Nav className="mx-auto">
@@ -21,7 +23,9 @@ function NavBar() {
                     <Nav.Link href="">¿Quienes somos?</Nav.Link>
                     <Nav.Link href="">Contacto</Nav.Link>
                 </Nav>
-                <Nav.Link ><a href="#login">Mark Otto</a></Nav.Link>
+                <CartWidget/>
+                <ItemListContainer/>
+                <Nav.Link className="mx-2" ><a href="#login">Mark Otto</a></Nav.Link>
             </Container>
         </Navbar>
     );
